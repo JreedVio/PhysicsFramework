@@ -33,12 +33,46 @@ bool Scene2::OnCreate()
 	}
 	camera = std::dynamic_pointer_cast<CameraActor>(assetManager.xmlAssets.find("Camera1")->second);
 	light = std::dynamic_pointer_cast<LightActor>(assetManager.xmlAssets.find("Light1")->second);
-	return true;
+
+	//Initialization flag
+	bool success = true;
+
+	//Initialize SDL
+	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_JOYSTICK) < 0)
+	{
+		printf("SDL could not initialize! SDL Error: %s\n", SDL_GetError());
+		success = false;
+	}
+
+	//Set texture filtering to linear
+	if (!SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY, "1"))
+	{
+		printf("Warning: Linear texture filtering not enabled!");
+	}
+
+	//Check for joysticks
+	if (SDL_NumJoysticks() < 1)
+	{
+		printf("Warning: No joysticks connected!\n");
+	}
+	else
+	{
+		//Load joystick
+		gGameController = SDL_JoystickOpen(0);
+		if (gGameController == NULL)
+		{
+			printf("Warning: Unable to open game controller! SDL Error: %s\n", SDL_GetError());
+		}
+	}
+
+	return success;
 }
 
 void Scene2::OnDestroy()
 {
 	actors.clear();
+	SDL_JoystickClose(gGameController);
+	gGameController = NULL;
 }
 
 
@@ -140,6 +174,24 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 
 			}
 			
+		}
+		break;
+
+	case SDL_JOYAXISMOTION:  /* Handle Joystick Motion */
+		if (sdlEvent.jaxis.axis == 0)
+		{
+			//Move to the left
+			if (sdlEvent.jaxis.value < -JOYSTICK_DEAD_ZONE)
+			{
+				cameraTransform->SetTransform(cameraTransform->pos, cameraTransform->GetOrientation()* QMath::angleAxisRotation(-2.0f, Vec3(0.0f, 1.0f, 0.0f)));
+				camera->UpdateViewMatrix();
+			}
+			//Move to the right
+			if (sdlEvent.jaxis.value > JOYSTICK_DEAD_ZONE)
+			{
+				cameraTransform->SetTransform(cameraTransform->pos, cameraTransform->GetOrientation() * QMath::angleAxisRotation(2.0f, Vec3(0.0f, 1.0f, 0.0f)));
+				camera->UpdateViewMatrix();
+			}
 		}
 		break;
 

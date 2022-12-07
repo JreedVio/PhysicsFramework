@@ -10,6 +10,8 @@
 
 struct Scene2 : public Scene
 {
+	const int JOYSTICK_DEAD_ZONE = 8000;
+
 	bool renderMeshes = true;
 	bool renderCollisionShapes = true;
 	explicit Scene2() {};
@@ -32,6 +34,8 @@ struct Scene2 : public Scene
 	//PHYSICS::PhysicsObject pickedPhysicsObject;
 	MATH::Vec3 intersectionPoint;
 	bool haveClickedOnSomething = false;
+
+	SDL_Joystick* gGameController = NULL;
 };
 
 #endif
