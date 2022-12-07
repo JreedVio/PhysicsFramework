@@ -1,0 +1,2086 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 885,
+                  "startColumn": 46,
+                  "endLine": 885,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?tryParseDouble@tinyobj@@YA_NPBD0PAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "Arithmetic overflow: Using operator '-' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '-' to avoid overflow (io.2)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 910,
+                  "startColumn": 46,
+                  "endLine": 910,
+                  "endColumn": 54
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?tryParseDouble@tinyobj@@YA_NPBD0PAN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'tinyobj::texture_type_t' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 1045,
+                  "startColumn": 34,
+                  "endLine": 1045,
+                  "endColumn": 34
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?parseTextureType@tinyobj@@YA?AW4texture_type_t@1@PAPBDW421@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "The function 'std::numeric_limits<float>::epsilon' is constexpr, mark variable 'epsilon' constexpr if compile-time evaluation is desired (con.5)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 1425,
+                  "startColumn": 38,
+                  "endLine": 1425,
+                  "endColumn": 84
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?exportGroupsToShape@tinyobj@@YA_NPAUshape_t@1@ABUPrimGroup@1@ABV?$vector@Utag_t@tinyobj@@V?$allocator@Utag_t@tinyobj@@@std@@@std@@HABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@5@_NABV?$vector@MV?$allocator@M@std@@@5@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::blendu' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::blendu"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::clamp' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::clamp"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::imfchan' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::imfchan"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::scale' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::scale"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::texture_resolution' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::texture_resolution"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::turbulence' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::turbulence"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::origin_offset' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::origin_offset"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::contrast' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::contrast"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::sharpness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::sharpness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::brightness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::brightness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::type' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::type"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::blendv' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::blendv"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::texture_option_t::bump_multiplier' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 5,
+                  "endLine": 174,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0texture_option_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::texture_option_t::bump_multiplier"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::dummy' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::dummy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::illum' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::illum"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::dissolve' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::dissolve"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::ambient' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::ambient"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::ior' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::ior"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::shininess' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::shininess"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::emission' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::emission"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::transmittance' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::transmittance"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::specular' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::specular"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::diffuse' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::diffuse"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::roughness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::roughness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::metallic' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::metallic"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::sheen' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::sheen"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::clearcoat_thickness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::clearcoat_thickness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::clearcoat_roughness' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::clearcoat_roughness"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::anisotropy' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::anisotropy"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::anisotropy_rotation' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::anisotropy_rotation"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::pad0' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::pad0"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::material_t::pad2' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 5,
+                  "endLine": 318,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0material_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::material_t::pad2"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'tinyobj::skin_weight_t::vertex_id' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+                },
+                "region": {
+                  "startLine": 338,
+                  "startColumn": 5,
+                  "endLine": 338,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0skin_weight_t@tinyobj@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "tinyobj::skin_weight_t::vertex_id"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'MeshComponent::dataLength' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/MeshComponent.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 16,
+                  "endLine": 8,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MeshComponent@@QAE@PAVComponent@@PBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "MeshComponent::dataLength"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'MeshComponent::drawmode' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/MeshComponent.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 16,
+                  "endLine": 8,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MeshComponent@@QAE@PAVComponent@@PBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "MeshComponent::drawmode"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'MeshComponent::vao' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/MeshComponent.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 16,
+                  "endLine": 8,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MeshComponent@@QAE@PAVComponent@@PBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "MeshComponent::vao"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Variable 'MeshComponent::vbo' is uninitialized. Always initialize a member variable (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/MeshComponent.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 16,
+                  "endLine": 8,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MeshComponent@@QAE@PAVComponent@@PBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "MeshComponent::vbo"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29334.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x009CB1D0 -il C:\\Users\\Umer\\AppData\\Local\\Temp\\_CL_3ca75c03ast -typedil -f MeshComponent.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829334 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_MBCS -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++17 -FoDebug\\MeshComponent.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\Umer\\OneDrive - Humber College\\2021-22 Winter\\GAME 258 Game Engines 4\\ComponentFramework22.4.0 2022-04-02 - Asset Manager\\ComponentFramework -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\GameDev\\OpenGL\\include -I C:\\GameDev\\SDL\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.6.1\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scenemanager.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/debug.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/GameDev/SDL/include/SDL_stdinc.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/GameDev/SDL/include/SDL_rect.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/Matrix.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scenemanager.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_main.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_config.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_platform.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/begin_code.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/close_code.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_assert.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_atomic.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_audio.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_error.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_endian.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_mutex.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_thread.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_rwops.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_clipboard.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_cpuinfo.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_events.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_video.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_pixels.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_surface.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_blendmode.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_keyboard.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_keycode.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_scancode.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_mouse.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_joystick.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_gamecontroller.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_sensor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_quit.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_gesture.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_touch.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_filesystem.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_haptic.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_hidapi.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_hints.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_loadso.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_log.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_messagebox.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_metal.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_power.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_render.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_shape.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_system.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_timer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_version.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_locale.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_misc.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/timer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/window.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_opengl.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_opengl_glext.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene0.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/component.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/vector.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene1.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene2.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/actor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene3.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene3.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/opengl/include/glew.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/mmath.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/plane.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/vmath.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/shape.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/ray.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/aabb.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/axisangle.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/cameraactor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/transformcomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/quaternion.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/euler.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/materialcomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/lightactor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/qmath.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/xmlassetmanager.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/shadercomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/meshcomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/collider.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/cylinder.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/shapecomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/sphere.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/box.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/capsule.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene2.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/assetmanager.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/Scene1.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/quadraticsolver.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/quadraticsolver.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/qmath.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/plane.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/MeshComponent.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        }
+      ]
+    }
+  ]
+}

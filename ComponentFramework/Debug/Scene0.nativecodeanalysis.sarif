@@ -1,0 +1,1205 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "Unannotated fallthrough between switch labels (es.78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/GameDev/SDL/include/SDL_stdinc.h"
+                },
+                "region": {
+                  "startLine": 500,
+                  "startColumn": 14,
+                  "endLine": 500,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "SDL_memset4",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "Unannotated fallthrough between switch labels (es.78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/GameDev/SDL/include/SDL_stdinc.h"
+                },
+                "region": {
+                  "startLine": 501,
+                  "startColumn": 14,
+                  "endLine": 501,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "SDL_memset4",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "Unannotated fallthrough between switch labels (es.78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/GameDev/SDL/include/SDL_stdinc.h"
+                },
+                "region": {
+                  "startLine": 502,
+                  "startColumn": 14,
+                  "endLine": 502,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "SDL_memset4",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26819",
+          "message": {
+            "text": "Unannotated fallthrough between switch labels (es.78)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/GameDev/SDL/include/SDL_stdinc.h"
+                },
+                "region": {
+                  "startLine": 503,
+                  "startColumn": 14,
+                  "endLine": 503,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "SDL_memset4",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'SDL_bool' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/GameDev/SDL/include/SDL_rect.h"
+                },
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "SDL_PointInRect",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "The enum type 'MATH::Matrix4::Colunm' is unscoped. Prefer 'enum class' over 'enum' (Enum.3)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/Matrix.h"
+                },
+                "region": {
+                  "startLine": 181,
+                  "startColumn": 15,
+                  "endLine": 181,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?getColumn@Matrix4@MATH@@QAE?AUVec4@2@W4Colunm@12@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29334.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x009CB1D0 -il C:\\Users\\Umer\\AppData\\Local\\Temp\\_CL_958551d6ast -typedil -f Scene0.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829334 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -D_MBCS -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -std:c++17 -FoDebug\\Scene0.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\Umer\\OneDrive - Humber College\\2021-22 Winter\\GAME 258 Game Engines 4\\ComponentFramework22.4.0 2022-04-02 - Asset Manager\\ComponentFramework -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\GameDev\\OpenGL\\include -I C:\\GameDev\\SDL\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.19041.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.6.1\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scenemanager.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/debug.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/GameDev/SDL/include/SDL_stdinc.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/GameDev/SDL/include/SDL_rect.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/Matrix.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scenemanager.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_main.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_config.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_platform.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/begin_code.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/close_code.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_assert.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_atomic.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_audio.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_error.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_endian.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_mutex.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_thread.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_rwops.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_clipboard.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_cpuinfo.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_events.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_video.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_pixels.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_surface.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_blendmode.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_keyboard.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_keycode.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_scancode.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_mouse.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_joystick.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_gamecontroller.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_sensor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_quit.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_gesture.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_touch.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_filesystem.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_haptic.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_hidapi.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_hints.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_loadso.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_log.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_messagebox.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_metal.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_power.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_render.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_shape.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_system.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_timer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_version.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_locale.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_misc.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/timer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/window.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_opengl.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_opengl_glext.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene0.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/component.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/vector.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene1.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene2.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/actor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene3.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene3.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/opengl/include/glew.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/mmath.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/plane.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/vmath.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/shape.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/ray.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/aabb.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/axisangle.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/cameraactor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/transformcomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/quaternion.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/euler.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/materialcomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/lightactor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/qmath.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/xmlassetmanager.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/shadercomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/meshcomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/collider.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/cylinder.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/shapecomponent.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/sphere.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/box.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/capsule.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene2.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/assetmanager.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/Scene1.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/quadraticsolver.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/quadraticsolver.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/qmath.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/plane.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tiny_obj_loader.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/MeshComponent.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/materialcomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/gamedev/sdl/include/sdl_image.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/LightActor.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/ubo_padding.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/emath.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/emath.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/debug.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/cylinder.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/collider.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/capsule.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/cameraactor.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/box.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/assetmanager.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/actor.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tinyxml2.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/XMLAssetManager.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/window.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/vmath.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/transformcomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/tinyxml2.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/timer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/sphere.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/shapecomponent.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/shape.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Umer/OneDrive - Humber College/2021-22 Winter/GAME 258 Game Engines 4/ComponentFramework22.4.0 2022-04-02 - Asset Manager/ComponentFramework/ShaderComponent.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/umer/onedrive - humber college/2021-22 winter/game 258 game engines 4/componentframework22.4.0 2022-04-02 - asset manager/componentframework/scene0.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        }
+      ]
+    }
+  ]
+}

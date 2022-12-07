@@ -1,0 +1,2 @@
+C:\Users\Umer\OneDrive - Humber College\2021-22 Winter\GAME 258 Game Engines 4\ComponentFramework22.4.0 2022-04-02 - Asset Manager\Debug\ComponentFramework.exe.lastcodeanalysissucceeded
+C:\Users\Umer\OneDrive - Humber College\2021-22 Winter\GAME 258 Game Engines 4\ComponentFramework22.4.0 2022-04-02 - Asset Manager\ComponentFramework\Debug\NativeCodeAnalysis.read.1.tlog
