@@ -14,6 +14,9 @@
 #include "ShapeComponent.h"
 #include "PhysicsComponent.h"
 #include "Physics.h"
+#include <chrono>
+#include <thread>
+
 
 using namespace GEOMETRY;
 using namespace PHYSICS;
@@ -65,6 +68,9 @@ bool Scene2::OnCreate()
 		}
 	}
 
+	engine = createIrrKlangDevice();
+	//music = engine->play2D("media/bell.wav", false, true);
+
 	return success;
 }
 
@@ -73,6 +79,8 @@ void Scene2::OnDestroy()
 	actors.clear();
 	SDL_JoystickClose(gGameController);
 	gGameController = NULL;
+	delete engine;
+	//delete music;
 }
 
 
@@ -123,6 +131,8 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 
 	case SDL_MOUSEBUTTONDOWN:
 		if (sdlEvent.button.button == SDL_BUTTON_LEFT) {
+			engine->play2D("media/bell.wav", false);
+			//engine->play2D("media/bell.wav", false);
 			Vec3 mouseCoords(static_cast<float>(sdlEvent.button.x), static_cast<float>(sdlEvent.button.y), 0.0f);
 			// TODO: get a ray pointing into the world
 			// We have the x, y pixel coordinates

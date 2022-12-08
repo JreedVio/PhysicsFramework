@@ -7,6 +7,10 @@
 #include "LightActor.h"
 #include "CameraActor.h"
 #include "Ray.h"
+#include <stdio.h>
+#include <irrKlang.h>
+
+using namespace irrklang;
 
 struct Scene2 : public Scene
 {
@@ -36,6 +40,9 @@ struct Scene2 : public Scene
 	bool haveClickedOnSomething = false;
 
 	SDL_Joystick* gGameController = NULL;
+
+	ISoundEngine* engine;
+	//ISound* music;
 };
 
 #endif

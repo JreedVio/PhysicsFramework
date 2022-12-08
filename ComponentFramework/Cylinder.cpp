@@ -77,7 +77,7 @@ RayIntersectionInfo GEOMETRY::Cylinder::rayIntersectionInfo(const Ray& ray) cons
 		return rayInfo;
 	}
 
-	//std::cout << "Infinite Cylinder\n";
+	std::cout << "Infinite Cylinder\n";
 
 	// CALCULATE ab, ap, as = start-A
 	Vec3 ab = capCentrePosB - capCentrePosA;
@@ -137,12 +137,9 @@ RayIntersectionInfo GEOMETRY::Cylinder::checkInfiniteCylinder(const Ray& ray) co
 	Vec3 as = ray.start - capCentrePosA;
 
 
-	const float a = VMath::dot(ray.dir, ray.dir) - 
-		VMath::dot(ray.dir, abNorm) * VMath::dot(ray.dir, abNorm);
-	const float b = 2.0f * (VMath::dot(as, ray.dir) - 
-		VMath::dot(ray.dir, abNorm) * VMath::dot(as, abNorm));
-	const float c = VMath::dot(as, as) -
-		VMath::dot(as, abNorm) * VMath::dot(as, abNorm) - r * r;
+	const float a = VMath::dot(ray.dir, ray.dir) - VMath::dot(ray.dir, abNorm) * VMath::dot(ray.dir, abNorm);
+	const float b = 2.0f * (VMath::dot(as, ray.dir) - VMath::dot(ray.dir, abNorm) * VMath::dot(as, abNorm));
+	const float c = VMath::dot(as, as) - VMath::dot(as, abNorm) * VMath::dot(as, abNorm) - r * r;
 
 	QuadraticSolution soln = solveQuadratic(a, b, c);
 
