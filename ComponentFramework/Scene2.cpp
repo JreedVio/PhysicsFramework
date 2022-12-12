@@ -69,7 +69,6 @@ bool Scene2::OnCreate()
 	}
 
 	engine = createIrrKlangDevice();
-	//music = engine->play2D("media/bell.wav", false, true);
 
 	return success;
 }
@@ -206,6 +205,64 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 				cameraTransform->SetTransform(cameraTransform->pos, cameraTransform->GetOrientation() * QMath::angleAxisRotation(2.0f, Vec3(0.0f, 1.0f, 0.0f)));
 				camera->UpdateViewMatrix();
 			}
+		}
+		if (sdlEvent.jaxis.axis == 3)
+		{
+			//Move forward
+			if (sdlEvent.jaxis.value < -JOYSTICK_DEAD_ZONE)
+			{
+				cameraTransform->pos += Vec3(0, 0, 1);
+				camera->UpdateViewMatrix();
+			}
+			//Move backward
+			if (sdlEvent.jaxis.value > JOYSTICK_DEAD_ZONE)
+			{
+				cameraTransform->pos += Vec3(0, 0, -1);
+				camera->UpdateViewMatrix();
+			}
+
+		}
+		break;
+	case SDL_JOYHATMOTION:
+		if (sdlEvent.jhat.value == SDL_HAT_UP)
+		{
+			cameraTransform->pos += Vec3(0, -1, 0);
+			camera->UpdateViewMatrix();
+		}
+		if (sdlEvent.jhat.value == SDL_HAT_DOWN)
+		{
+			cameraTransform->pos += Vec3(0, 1, 0);
+			camera->UpdateViewMatrix();
+		}
+		if (sdlEvent.jhat.value == SDL_HAT_LEFT)
+		{
+			cameraTransform->pos += Vec3(1, 0, 0);
+			camera->UpdateViewMatrix();
+		}
+		if (sdlEvent.jhat.value == SDL_HAT_RIGHT)
+		{
+			cameraTransform->pos += Vec3(-1, 0, 0);
+			camera->UpdateViewMatrix();
+		}
+		if (sdlEvent.jhat.value == SDL_HAT_RIGHTUP)
+		{
+			cameraTransform->pos += Vec3(-1, -1, 0);
+			camera->UpdateViewMatrix();
+		}
+		if (sdlEvent.jhat.value == SDL_HAT_RIGHTDOWN)
+		{
+			cameraTransform->pos += Vec3(-1, 1, 0);
+			camera->UpdateViewMatrix();
+		}
+		if (sdlEvent.jhat.value == SDL_HAT_LEFTUP)
+		{
+			cameraTransform->pos += Vec3(1, -1, 0);
+			camera->UpdateViewMatrix();
+		}
+		if (sdlEvent.jhat.value == SDL_HAT_LEFTDOWN)
+		{
+			cameraTransform->pos += Vec3(1, 1, 0);
+			camera->UpdateViewMatrix();
 		}
 		break;
 

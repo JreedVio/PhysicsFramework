@@ -42,7 +42,6 @@ struct Scene2 : public Scene
 	SDL_Joystick* gGameController = NULL;
 
 	ISoundEngine* engine;
-	//ISound* music;
 };
 
 #endif
