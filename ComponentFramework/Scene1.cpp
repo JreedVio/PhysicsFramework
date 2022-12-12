@@ -150,10 +150,10 @@ void Scene1::Update(const float deltaTime)
 {
 }
 
-void Scene1::Render() const
+void Scene1::Render(ImVec4 bgColour) const
 {
 	glEnable(GL_DEPTH_TEST);
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glClearColor(bgColour.x, bgColour.y, bgColour.z, bgColour.w);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glBindBuffer(GL_UNIFORM_BUFFER, camera->GetMatricesID());
 	glBindBuffer(GL_UNIFORM_BUFFER, light->GetLightID());

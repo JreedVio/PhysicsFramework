@@ -18,7 +18,7 @@ struct Scene1 : public Scene
 	virtual bool OnCreate();
 	virtual void OnDestroy();
 	virtual void Update(const float deltaTime);
-	virtual void Render() const;
+	virtual void Render(ImVec4 bgColour) const;
 	virtual void HandleEvents(const SDL_Event& sdlEvent);
 
 	// Keep track of Actors from XML asset manager

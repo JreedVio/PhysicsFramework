@@ -77,8 +77,6 @@ RayIntersectionInfo GEOMETRY::Cylinder::rayIntersectionInfo(const Ray& ray) cons
 		return rayInfo;
 	}
 
-	std::cout << "Infinite Cylinder\n";
-
 	// CALCULATE ab, ap, as = start-A
 	Vec3 ab = capCentrePosB - capCentrePosA;
 	Vec3 as = ray.start - capCentrePosA;

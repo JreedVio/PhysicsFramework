@@ -131,7 +131,7 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 
 	case SDL_MOUSEBUTTONDOWN:
 		if (sdlEvent.button.button == SDL_BUTTON_LEFT) {
-			ISound* music = engine->play2D("media/bell.wav", false, true);
+			ISound* music = engine->play2D("media/click.wav", false, true);
 			music->setVolume(0.1);
 			music->setIsPaused(false);
 			//engine->play2D("media/bell.wav", false);
@@ -179,7 +179,9 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 						intersectionPoint = actor->GetModelMatrix() * rayInfo.intersectionPoint;
 						pickedActor = actor;
 						haveClickedOnSomething = true;
-						//std::cout << "Hello";
+						ISound* music = engine->play2D("media/bell.wav", false, true);
+						music->setVolume(0.1);
+						music->setIsPaused(false);
 
 					}
 				}
@@ -241,10 +243,10 @@ void Scene2::Update(const float deltaTime)
 	}
 }
 
-void Scene2::Render() const
+void Scene2::Render(ImVec4 bgColour) const
 {
 	glEnable(GL_DEPTH_TEST);
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glClearColor(bgColour.x, bgColour.y, bgColour.z, bgColour.w);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glBindBuffer(GL_UNIFORM_BUFFER, camera->GetMatricesID());
 	glBindBuffer(GL_UNIFORM_BUFFER, light->GetLightID());

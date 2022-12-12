@@ -2,6 +2,7 @@
 #define SCENEMANAGER_H
 
 #include <string>
+#include "imgui.h"
 class SceneManager  {
 public:
 	
@@ -28,6 +29,8 @@ private:
 	class Window* window;
 
 	bool show_demo_window;
+	bool show_another_window;
+	ImVec4 clear_color;
 	unsigned int fps;
 	bool isRunning;
 	bool fullScreen;

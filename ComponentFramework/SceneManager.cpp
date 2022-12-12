@@ -14,7 +14,8 @@
 // gets them done before the constructor even starts
 SceneManager::SceneManager(): 
 	currentScene(nullptr), window(nullptr), timer(nullptr),
-	fps(60), isRunning(false), fullScreen(false), show_demo_window(true) {
+	fps(60), isRunning(false), fullScreen(false), show_demo_window(true),
+	show_another_window(true), clear_color(ImVec4(0.45f, 0.55f, 0.60f, 1.00f)) {
 	Debug::Info("Starting the SceneManager", __FILE__, __LINE__);
 }
 
@@ -64,6 +65,7 @@ bool SceneManager::Initialize(std::string name_, int width_, int height_) {
 	ImGui_ImplOpenGL3_Init("#version 450");
 
 	
+	
 	return true;
 }
 
@@ -81,9 +83,25 @@ void SceneManager::Run() {
 		if (show_demo_window)
 			ImGui::ShowDemoWindow(&show_demo_window);
 
+		// 2. Show a simple window that we create ourselves. We use a Begin/End pair to create a named window.
+		if (show_another_window)
+		{
+			static float f = 0.0f;
+			static int counter = 0;
+
+			ImGui::Begin("Background Colour!");
+
+			ImGui::Text("Choose colour of the background.");
+
+			ImGui::ColorEdit3("clear colour", (float*)&clear_color);
+
+			ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
+			ImGui::End();
+		}
+
 		timer->UpdateFrameTicks();
 		currentScene->Update(timer->GetDeltaTime());
-		currentScene->Render();
+		currentScene->Render(clear_color);
 
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
