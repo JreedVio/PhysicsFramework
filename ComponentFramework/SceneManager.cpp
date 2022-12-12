@@ -6,11 +6,15 @@
 #include "Scene1.h"
 #include "Scene2.h"
 
+#include "imgui.h"
+#include "imgui_impl_sdl.h"
+#include "imgui_impl_opengl3.h"
+
 // This style using : to initialize
 // gets them done before the constructor even starts
 SceneManager::SceneManager(): 
 	currentScene(nullptr), window(nullptr), timer(nullptr),
-	fps(60), isRunning(false), fullScreen(false) {
+	fps(60), isRunning(false), fullScreen(false), show_demo_window(true) {
 	Debug::Info("Starting the SceneManager", __FILE__, __LINE__);
 }
 
@@ -49,6 +53,16 @@ bool SceneManager::Initialize(std::string name_, int width_, int height_) {
 
 	/********************************   Default first scene   ***********************/
 	BuildNewScene(SCENE_NUMBER::SCENE2);
+
+	IMGUI_CHECKVERSION();
+	ImGui::CreateContext();
+	ImGuiIO& io = ImGui::GetIO(); (void)io;
+
+	ImGui::StyleColorsDark();
+
+	ImGui_ImplSDL2_InitForOpenGL(window->getWindow(), window->getContext());
+	ImGui_ImplOpenGL3_Init("#version 450");
+
 	
 	return true;
 }
@@ -58,10 +72,22 @@ void SceneManager::Run() {
 	timer->Start();
 	isRunning = true;
 	while (isRunning) {
+		
+		HandleEvents();
+
+		ImGui_ImplOpenGL3_NewFrame();
+		ImGui_ImplSDL2_NewFrame();
+		ImGui::NewFrame();
+		if (show_demo_window)
+			ImGui::ShowDemoWindow(&show_demo_window);
+
 		timer->UpdateFrameTicks();
 		currentScene->Update(timer->GetDeltaTime());
 		currentScene->Render();
-		HandleEvents();
+
+		ImGui::Render();
+		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
 		SDL_GL_SwapWindow(window->getWindow());
 		SDL_Delay(timer->GetSleepTime(fps));
 	}
@@ -70,6 +96,7 @@ void SceneManager::Run() {
 void SceneManager::HandleEvents() {
 	SDL_Event sdlEvent;
 	while (SDL_PollEvent(&sdlEvent)) {
+		ImGui_ImplSDL2_ProcessEvent(&sdlEvent);
 		if (sdlEvent.type == SDL_EventType::SDL_QUIT) {
 			isRunning = false;
 			return;

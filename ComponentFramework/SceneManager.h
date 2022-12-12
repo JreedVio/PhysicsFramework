@@ -27,6 +27,7 @@ private:
 	class Timer* timer;
 	class Window* window;
 
+	bool show_demo_window;
 	unsigned int fps;
 	bool isRunning;
 	bool fullScreen;

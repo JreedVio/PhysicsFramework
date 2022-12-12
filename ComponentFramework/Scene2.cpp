@@ -131,7 +131,9 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 
 	case SDL_MOUSEBUTTONDOWN:
 		if (sdlEvent.button.button == SDL_BUTTON_LEFT) {
-			engine->play2D("media/bell.wav", false);
+			ISound* music = engine->play2D("media/bell.wav", false, true);
+			music->setVolume(0.1);
+			music->setIsPaused(false);
 			//engine->play2D("media/bell.wav", false);
 			Vec3 mouseCoords(static_cast<float>(sdlEvent.button.x), static_cast<float>(sdlEvent.button.y), 0.0f);
 			// TODO: get a ray pointing into the world
