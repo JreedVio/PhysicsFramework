@@ -147,7 +147,7 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 			Vec3 ray_worldDirection = VMath::normalize(rayTransform * Vec3(mouseCoords.x,
 				mouseCoords.y, 1.0f));
 			Vec3 ray_worldStart(0.0f, 0.0f, 0.0f);
-
+			
 
 			const GEOMETRY::Ray ray{ ray_worldStart, ray_worldDirection };
 			haveClickedOnSomething = false;

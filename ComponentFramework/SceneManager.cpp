@@ -12,6 +12,7 @@
 
 // This style using : to initialize
 // gets them done before the constructor even starts
+
 SceneManager::SceneManager(): 
 	currentScene(nullptr), window(nullptr), timer(nullptr),
 	fps(60), isRunning(false), fullScreen(false), show_demo_window(true),
@@ -125,6 +126,9 @@ void SceneManager::HandleEvents() {
 				isRunning = false;
 				return;
 				[[fallthrough]]; /// C17 Prevents switch/case fallthrough warnings
+			case SDL_SCANCODE_J:
+				break;
+
 			default:
 				break;
 			}
@@ -169,5 +173,7 @@ void SceneManager::BuildNewScene(SCENE_NUMBER scene) {
 		break;
 	}	
 }
+
+
 
 

@@ -25,6 +25,23 @@
 // finish the lightActor. Build material
 // bind the material, before the draw call
 // pass the light position to the GPU
+
+int numOfAllocations = 0;
+int numOfDeallocations = 0;
+int bytesAllocated = 0;
+int bytesDeallocated = 0;
+
+void* operator new(std::size_t amount) {
+	numOfAllocations++;
+	bytesAllocated += amount;
+	return malloc(amount);
+}
+
+void operator delete(void* memoryLocation, std::size_t amount) {
+	numOfDeallocations++;
+	bytesDeallocated += amount;
+	free(memoryLocation);
+}
   
 int main(int argc, char* args[]) {
 	// Garen Johnston figured out a way to clear any memory leaks
@@ -47,6 +64,8 @@ int main(int argc, char* args[]) {
 			game->Run();
 		}
 	}
+	std::cout << "Main Num: " << numOfAllocations << " " << numOfDeallocations << "\n";
+	std::cout << "Main Bytes: " << bytesAllocated << " " << bytesDeallocated << "\n";
 	/// This writes out memory leaks to the output window not the console window
 	_CrtDumpMemoryLeaks();
 	// Garen says to comment out the line above so that we don't dump leaks before exiting

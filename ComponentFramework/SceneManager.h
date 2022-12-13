@@ -3,6 +3,7 @@
 
 #include <string>
 #include "imgui.h"
+
 class SceneManager  {
 public:
 	
@@ -34,7 +35,9 @@ private:
 	unsigned int fps;
 	bool isRunning;
 	bool fullScreen;
+
 	void BuildNewScene(SCENE_NUMBER scene_);
+	
 };
 
 
