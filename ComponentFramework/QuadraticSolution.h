@@ -13,7 +13,6 @@ namespace GEOMETRY {
 		// Set them both to zero to begin with
 		float firstRoot = 0.0f;
 		float secondRoot = 0.0f;
-		void print();
 
 	};
 

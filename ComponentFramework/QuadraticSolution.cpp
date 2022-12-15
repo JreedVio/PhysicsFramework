@@ -25,7 +25,3 @@ GEOMETRY::QuadraticSolution GEOMETRY::solveQuadratic(float a, float b, float c)
         
     }
 }
-
-void GEOMETRY::QuadraticSolution::print()
-{
-}

@@ -7,6 +7,8 @@
 #include <string>
 #include "SceneManager.h"
 #include "Debug.h"
+#include <iostream>
+#include "Printer.h"
 
 // 2022-04-05
 // Hooked up with GitHub thanks to Gail Harris!
@@ -51,6 +53,13 @@ int main(int argc, char* args[]) {
 	static_assert(sizeof(void*) == 4, "Are you ready for 64-bit build?");
 
 	Debug::DebugInit("GameEngineLog.txt");
+
+	PrintDog();
+	PrintLine();
+	PrintCat();
+	PrintLine();
+	PrintParrot();
+
 	
 	// Let's fix up this raw pointer:
 	// SceneManager* gsm = new SceneManager();
