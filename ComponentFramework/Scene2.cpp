@@ -14,12 +14,16 @@
 #include "ShapeComponent.h"
 #include "PhysicsComponent.h"
 #include "Physics.h"
+#include "PerfomanceTimer.h"
 #include <chrono>
 #include <thread>
 
 
 using namespace GEOMETRY;
 using namespace PHYSICS;
+
+//#define PROFILE_SCOPE(name) PerfomanceTimer timer##__LINE__(name, 
+//[&](ProfileResult profileResult) {m_ProfileResults.push_back(profileResult); }))
 
 bool Scene2::OnCreate()
 {
@@ -302,6 +306,8 @@ void Scene2::Update(const float deltaTime)
 
 void Scene2::Render(ImVec4 bgColour) const
 {
+	PerfomanceTimer timer("Scene2::Update");
+
 	glEnable(GL_DEPTH_TEST);
 	glClearColor(bgColour.x, bgColour.y, bgColour.z, bgColour.w);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

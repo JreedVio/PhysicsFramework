@@ -9,6 +9,7 @@
 #include "Ray.h"
 #include <stdio.h>
 #include <irrKlang.h>
+#include <vector>
 
 using namespace irrklang;
 

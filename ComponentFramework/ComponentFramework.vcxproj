@@ -167,6 +167,7 @@
     <ClCompile Include="LightActor.cpp" />
     <ClCompile Include="MaterialComponent.cpp" />
     <ClCompile Include="MeshComponent.cpp" />
+    <ClCompile Include="PerfomanceTimer.cpp" />
     <ClCompile Include="Physics.cpp" />
     <ClCompile Include="PhysicsComponent.cpp" />
     <ClCompile Include="QMath.cpp" />
@@ -212,6 +213,7 @@
     <ClInclude Include="LightActor.h" />
     <ClInclude Include="MaterialComponent.h" />
     <ClInclude Include="MeshComponent.h" />
+    <ClInclude Include="PerfomanceTimer.h" />
     <ClInclude Include="Physics.h" />
     <ClInclude Include="PhysicsComponent.h" />
     <ClInclude Include="QMath.h" />
