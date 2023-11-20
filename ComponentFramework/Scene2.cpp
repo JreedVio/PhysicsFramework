@@ -29,10 +29,8 @@ bool Scene2::OnCreate()
 {
 	XMLAssetManager assetManager;
 	std::vector<std::string> names{
-		"ActorGameBoard" , "ActorChecker1", "ActorChecker2",
-		"ActorDefaultChecker", "ActorTinyChecker", "ActorSkull",
-		"ActorCube", "ActorCube2",
-		"ActorMario"
+		"ActorGameBoard" , "ActorChecker1", "ActorChecker2", "ActorTinyChecker", "ActorSkull",
+		"ActorCube", "ActorMario", "ActorMarioMime"
 	};
 	for (const auto& name : names) {
 		auto asset = assetManager.xmlAssets.find(name);
@@ -73,6 +71,8 @@ bool Scene2::OnCreate()
 	}
 
 	engine = createIrrKlangDevice();
+	engine->setSoundVolume(0.1f);
+
 
 	return success;
 }
@@ -135,7 +135,7 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 	case SDL_MOUSEBUTTONDOWN:
 		if (sdlEvent.button.button == SDL_BUTTON_LEFT) {
 			ISound* music = engine->play2D("media/click.wav", false, true);
-			music->setVolume(0.1);
+			music->setVolume(1);
 			music->setIsPaused(false);
 			//engine->play2D("media/bell.wav", false);
 			Vec3 mouseCoords(static_cast<float>(sdlEvent.button.x), static_cast<float>(sdlEvent.button.y), 0.0f);
@@ -150,7 +150,7 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 			Matrix4 rayTransform = MMath::inverse(ndc * projection * view);
 			Vec3 ray_worldDirection = VMath::normalize(rayTransform * Vec3(mouseCoords.x,
 				mouseCoords.y, 1.0f));
-			Vec3 ray_worldStart(0.0f, 0.0f, 0.0f);
+			Vec3 ray_worldStart(0.0f, 0.0f, 0.0f); // (Camera pos)
 			
 
 			const GEOMETRY::Ray ray{ ray_worldStart, ray_worldDirection };
@@ -179,7 +179,7 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 						// TO DO: Check this is the first object hit by the ray. 
 						//Ignore anything hit behind that object
 						std::cout << "You picked: " << it->first << std::endl;
-						intersectionPoint = actor->GetModelMatrix() * rayInfo.intersectionPoint;
+						intersectionPoint = actor->GetModelMatrixWithoutParenting() * rayInfo.intersectionPoint;
 						pickedActor = actor;
 						haveClickedOnSomething = true;
 						ISound* music = engine->play2D("media/bell.wav", false, true);
@@ -279,28 +279,23 @@ void Scene2::HandleEvents(const SDL_Event& sdlEvent)
 void Scene2::Update(const float deltaTime)
 {
 	if (haveClickedOnSomething) {
-		//std::cout << "Clicked on something!!!\n";
 		Ref<PhysicsComponent> body = pickedActor->GetComponent<PhysicsComponent>();
 		float dragCoeff = 0.2f;
 		Vec3 dragForce = body->vel * (-dragCoeff);
 		Vec3 gravityForce(0.0f, -10.0f, 0.0f);
 		Vec3 netForce = gravityForce + dragForce;
+
 		PHYSICS::ApplyForce(body, netForce);
 		//calculate a first approximation of velocity based on acceleration
-		body->vel += body->accel * deltaTime;
+		PHYSICS::UpdateVel(body, deltaTime);
 		//use constrains to correct velocity errors
 		PHYSICS::MouseConstraint(body, deltaTime, intersectionPoint);
 		//update position using corrected velocities
-		body->pos += body->vel * deltaTime;
-		//we can rotate too with the mouse constraint, so update orientation too
-		Quaternion angularVelQuaternion(0.0f, body->angularVel);
-		// Rotate using q = q + 0.5 twq
-		body->orientation = body->orientation + angularVelQuaternion * body->orientation * 0.5f * deltaTime;
-		// don't forget to normalize after too. Only unit quaternions please. Otherwise the model stretches
-		body->orientation = MATH::QMath::normalize(body->orientation);
+		PHYSICS::UpdatePos(body, deltaTime);
+		//update angular velocity and orientation
+		PHYSICS::ApplyAngularMotion(body, deltaTime);
 		// Now ensure the transorm component matches physics position and orietation
 		PHYSICS::UpdateTransform(body, pickedActor->GetComponent<TransformComponent>());
-
 	}
 }
 

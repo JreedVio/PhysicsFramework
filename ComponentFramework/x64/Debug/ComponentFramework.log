@@ -1,85 +1,121 @@
 ﻿  Actor.cpp
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(13,56): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Actor.cpp(21,58): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
-  Main.cpp
-  XMLAssetManager.cpp
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(147,27): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(159,27): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0420' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0431' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0447' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0438' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0439' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0441' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u0442' cannot be represented in the current code page (1252)
-C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\ComponentFramework\Vector.h(314,27): warning C4566: character represented by universal-character-name '\u043B' cannot be represented in the current code page (1252)
+  Box.cpp
+  CameraActor.cpp
+  Capsule.cpp
+  Cylinder.cpp
+  Debug.cpp
+  EMath.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_opengl3.cpp
+  imgui_impl_sdl.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  LightActor.cpp
+  MaterialComponent.cpp
+  MeshComponent.cpp
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\MeshComponent.cpp(132,31): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\MeshComponent.cpp(138,32): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  PerfomanceTimer.cpp
+  Physics.cpp
+  PhysicsComponent.cpp
   Generating Code...
-  ComponentFramework.vcxproj -> C:\Users\jreed\OneDrive\Рабочий стол\College\Sem5\Physics\PhysicsFramework\x64\Debug\ComponentFramework.exe
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\Capsule.cpp(167): warning C4715: 'GEOMETRY::Capsule::checkHalfSphere': not all control paths return a value
+  Compiling...
+  QMath.cpp
+  QuadraticSolution.cpp
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\QuadraticSolution.cpp(14,52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\QuadraticSolution.cpp(19,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\QuadraticSolution.cpp(20,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Ray.cpp
+  Scene0.cpp
+  Scene1.cpp
+  Scene2.cpp
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\Scene2.h(11,10): error C1083: Cannot open include file: 'irrKlang.h': No such file or directory
+  (compiling source file 'Scene2.cpp')
+  
+  SceneManager.cpp
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\Scene2.h(11,10): error C1083: Cannot open include file: 'irrKlang.h': No such file or directory
+  (compiling source file 'SceneManager.cpp')
+  
+  Main.cpp
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\Main.cpp(11,10): error C1083: Cannot open include file: 'Printer.h': No such file or directory
+  MMath.cpp
+  ShaderComponent.cpp
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.h(24,26): error C2039: 'string': is not a member of 'std'
+  (compiling source file 'ShaderComponent.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\unordered_map(23,1):
+  see declaration of 'std'
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.h(24,26): error C2065: 'string': undeclared identifier
+  (compiling source file 'ShaderComponent.cpp')
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.h(24,7): error C2923: 'std::unordered_map': 'string' is not a valid template type argument for parameter '_Kty'
+  (compiling source file 'ShaderComponent.cpp')
+  C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.h(24,26):
+  see declaration of 'string'
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.h(24,7): error C2976: 'std::unordered_map': too few template arguments
+  (compiling source file 'ShaderComponent.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\unordered_map(66,1):
+  see declaration of 'std::unordered_map'
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.h(24,43): error C2955: 'std::unordered_map': use of class template requires template argument list
+  (compiling source file 'ShaderComponent.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\unordered_map(66,1):
+  see declaration of 'std::unordered_map'
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.h(37,27): error C2039: 'string': is not a member of 'std'
+  (compiling source file 'ShaderComponent.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\unordered_map(23,1):
+  see declaration of 'std'
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.h(37,27): error C2061: syntax error: identifier 'string'
+  (compiling source file 'ShaderComponent.cpp')
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(8,46): error C2512: 'std::unordered_map': no appropriate default constructor available
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\unordered_map(66,1):
+  see declaration of 'std::unordered_map'
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(85,34): warning C4267: '=': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(104,34): warning C4267: '=': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(154,25): error C2511: 'GLuint ShaderComponent::GetUniformID(std::string)': overloaded member function not found in 'ShaderComponent'
+  C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.h(9,7):
+  see declaration of 'ShaderComponent'
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(157,6): error C3536: 'id': cannot be used before it is initialized
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(203,3): error C2678: binary '[': no operator found which takes a left-hand operand of type 'std::unordered_map' (or there is no acceptable conversion)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\unordered_map(436,18):
+  could be '_Ty &std::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>::operator [](const _Kty &)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\unordered_map(263,18):
+  or       '_Ty &std::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>::operator [](_Kty &&)'
+  C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(203,3):
+  while trying to match the argument list '(std::unordered_map, std::string)'
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(207,65): error C2678: binary '[': no operator found which takes a left-hand operand of type 'std::unordered_map' (or there is no acceptable conversion)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\unordered_map(436,18):
+  could be '_Ty &std::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>::operator [](const _Kty &)'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\unordered_map(263,18):
+  or       '_Ty &std::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>::operator [](_Kty &&)'
+  C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(207,65):
+  while trying to match the argument list '(std::unordered_map, std::string)'
+  
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(207,24): warning C4473: 'sprintf_s' : not enough arguments passed for format string
+  C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(207,24):
+  placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\ShaderComponent.cpp(207,24):
+  the missing variadic argument 2 is required by format string '%d'
+  
+  Shape.cpp
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\Shape.cpp(6,31): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  ShapeComponent.cpp
+  Sphere.cpp
+  Timer.cpp
+C:\Users\Vlad\Desktop\PhysicsFramework\ComponentFramework\Timer.cpp(55,21): warning C4312: 'type cast': conversion from 'unsigned int' to 'void *' of greater size
+  tinyxml2.cpp
+  TransformComponent.cpp
+  VMath.cpp
+  Window.cpp
+  XMLAssetManager.cpp
+  Generating Code...

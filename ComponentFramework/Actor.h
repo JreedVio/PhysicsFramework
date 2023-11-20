@@ -90,5 +90,6 @@ public:
 
 	// 2022-02-25 Scott is getting the parenting thing working
 	Matrix4 GetModelMatrix();
+	Matrix4 GetModelMatrixWithoutParenting();
 };
 

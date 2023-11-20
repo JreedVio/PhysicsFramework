@@ -13,7 +13,7 @@ void PHYSICS::ApplyForce(Ref<PhysicsComponent> body, MATH::Vec3 force)
 void PHYSICS::ApplyAngularMotion(Ref<PhysicsComponent> body, const float deltaTime)
 {
 	body->angularVel += body->angularAcc * deltaTime;
-	//update orientation too
+	//we can rotate too with the mouse constraint, so update orientation too
 	Quaternion angularVelQuaternion(0.0, body->angularVel);
 	// Rotate using q = q + 0.5 twq
 	body->orientation = body->orientation + angularVelQuaternion * body->orientation * 0.5f * deltaTime;
@@ -29,7 +29,8 @@ void PHYSICS::ApplyLinearMotion(Ref<PhysicsComponent> body, const float deltaTim
 
 void PHYSICS::UpdatePos(Ref<PhysicsComponent> body, const float deltaTime)
 {
-	body->pos += body->vel * deltaTime + 0.5f * body->accel * deltaTime * deltaTime;
+	body->pos += body->vel * deltaTime + 0.5f * body->accel * deltaTime * deltaTime; 
+	//body->pos += body->vel * deltaTime;
 }
 
 void PHYSICS::UpdateVel(Ref<PhysicsComponent> body, const float deltaTime)

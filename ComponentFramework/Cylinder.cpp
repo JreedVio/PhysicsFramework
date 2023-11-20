@@ -37,7 +37,7 @@ void GEOMETRY::Cylinder::generateVerticesAndNormals()
 	const Vec3 axis = VMath::normalize(capCentrePosB - capCentrePosA); // Direction
 	const Vec3 nudgeAxis = axis + Vec3(1.0f, 1.0f, 1.0f);
 	const Vec3 radialVector = r * VMath::normalize(VMath::cross(axis, nudgeAxis));	
-	const float deltaHeight = 0.5f;
+	const float deltaHeight = 0.1f;
 	const float deltaRad = 0.1f;
 
 	for (float thetaDeg = 0.0f; thetaDeg <= 360.0f; thetaDeg += deltaTheta)
@@ -84,22 +84,25 @@ RayIntersectionInfo GEOMETRY::Cylinder::rayIntersectionInfo(const Ray& ray) cons
 	//Vec3 ap = rayInfo.intersectionPoint - capCentrePosA;
 	Vec3 ap = as + rayInfo.t * ray.dir;
 
-	Vec3 bs = ray.start - capCentrePosB;
-
-	float dot_ab_ab = VMath::dot(ab, ab);
 	float dot_ap_ab = VMath::dot(ap, ab);
-
 	float dot_as_ab = VMath::dot(as, ab);
 	float dot_v_ab = VMath::dot(ray.dir, ab);
 
-	float dot_bs_ab = VMath::dot(bs, ab);
+
+	Vec3 bs = ray.start - capCentrePosB;
+	Vec3 ba = capCentrePosA - capCentrePosB;
+
+	float dot_ab_ab = VMath::dot(ab, ab);
+	float dot_bs_ba = VMath::dot(bs, ba);
+	float dot_v_ba = VMath::dot(ray.dir, ba);
+
 
 	if (dot_ap_ab < 0.0f) {
 		// we are outside of cap centre A's plane (on the left side)
 		if (VMath::dot(ray.dir, ab) > 0.0f) {
 			// need to check for ray coming at endcap A. I wrote out this eqn on paper
 			float t = -dot_as_ab / dot_v_ab;
-			return checkEndCap(ray, t);
+			return checkEndCap(ray, t, capCentrePosA);
 		}
 		else {
 			// ray going wrong way
@@ -112,9 +115,10 @@ RayIntersectionInfo GEOMETRY::Cylinder::rayIntersectionInfo(const Ray& ray) cons
 		// We are outside of cap centre B's plane (on the right side)
 		// If statement means the point is further than the length of the cylinder from endcap A
 		if (VMath::dot(ray.dir, ab) < 0.0f) {
+			std::cout << "B Cap\n";
 			// ray is coming for endcap B
-			float t = -dot_bs_ab / dot_v_ab;	
-			return checkEndCap(ray, t);
+			float t = -dot_bs_ba / dot_v_ba;
+			return checkEndCap(ray, t, capCentrePosB);
 		}
 		else {
 			// ray going wrong way
@@ -160,15 +164,13 @@ RayIntersectionInfo GEOMETRY::Cylinder::checkInfiniteCylinder(const Ray& ray) co
 	return rayInfo;
 }
 
-RayIntersectionInfo GEOMETRY::Cylinder::checkEndCap(const Ray& ray, float t) const
+RayIntersectionInfo GEOMETRY::Cylinder::checkEndCap(const Ray& ray, float t, Vec3 endCap) const
 {
 	RayIntersectionInfo rayInfo;
-	Vec3 ab = capCentrePosB - capCentrePosA;
-	Vec3 as = ray.start - capCentrePosA;
 
 	Vec3 q = ray.currentPosition(t);
 
-	float magnitude = VMath::mag(q - capCentrePosA);
+	float magnitude = VMath::mag(q - endCap);
 
 	if (magnitude <= r) {
 		rayInfo.isIntersected = true;

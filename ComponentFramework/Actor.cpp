@@ -64,3 +64,17 @@ Matrix4 Actor::GetModelMatrix()
 
 	return modelMatrix;
 }
+
+
+Matrix4 Actor::GetModelMatrixWithoutParenting()
+{
+	Ref<TransformComponent> transform = GetComponent<TransformComponent>();
+	if (transform) {
+		modelMatrix = transform->GetTransformMatrix();// if it exists, lets make a model matrix
+	}
+	else {
+		modelMatrix.loadIdentity();
+	}
+
+	return modelMatrix;
+}

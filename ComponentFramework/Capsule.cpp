@@ -81,20 +81,33 @@ RayIntersectionInfo GEOMETRY::Capsule::rayIntersectionInfo(const Ray& ray) const
 {
 	RayIntersectionInfo rayInfo;
 	
-	// Check the A sphere
+	// Check A sphere
 	rayInfo = checkEndSphere(sphereCentrePosA, ray);
 	if (rayInfo.isIntersected) {
-		rayInfo = checkHalfSphere(rayInfo, sphereCentrePosA);
+		std::cout << "Intersected with Sphere A at ";
+		rayInfo.intersectionPoint.print();
+		rayInfo = checkHalfSphere(rayInfo, sphereCentrePosA, sphereCentrePosB);
+		if (rayInfo.isIntersected) {
+			std::cout << "Half Sphere A intersection confirmed at ";
+			rayInfo.intersectionPoint.print();
+		}
 	}
-	// Check the B sphere
+	// Check B sphere
 	else {
 		rayInfo = checkEndSphere(sphereCentrePosB, ray);
 		if (rayInfo.isIntersected) {
-			rayInfo = checkHalfSphere(rayInfo, sphereCentrePosB);
+			std::cout << "Intersected with Sphere B at ";
+			rayInfo.intersectionPoint.print();
+			rayInfo = checkHalfSphere(rayInfo, sphereCentrePosB, sphereCentrePosA);
+			if (rayInfo.isIntersected) { 
+				std::cout << "Half Sphere B intersection confirmed at "; 
+				rayInfo.intersectionPoint.print(); 
+			}
 		}
 	}
 
 	if (!rayInfo.isIntersected) {
+		std::cout << "Check Cylinder\n";
 		rayInfo = checkCylinder(ray);
 	}
 
@@ -132,38 +145,21 @@ RayIntersectionInfo GEOMETRY::Capsule::checkEndSphere(MATH::Vec3 sphereCentre, c
 	return rayInfo;
 }
 
-RayIntersectionInfo GEOMETRY::Capsule::checkHalfSphere(const RayIntersectionInfo& rayInfoFullSphere, const MATH::Vec3& sphereCentre) const
+RayIntersectionInfo GEOMETRY::Capsule::checkHalfSphere(RayIntersectionInfo& rayInfoFullSphere, const MATH::Vec3& sphereCentre,
+																	const MATH::Vec3& oppositeSphereCentre) const
 {
-	RayIntersectionInfo rayInfo;
-
 	Vec3 CP = rayInfoFullSphere.intersectionPoint - sphereCentre;
-	Vec3 AB = sphereCentrePosB - sphereCentrePosA;
+	Vec3 CO = oppositeSphereCentre - sphereCentre;
 
-	float dot_CP_AB = VMath::dot(CP, AB);
+	float dot_CP_CO = VMath::dot(CP, CO);
 
-	if (sphereCentre == sphereCentrePosA)
+	if (dot_CP_CO < 0)
 	{
-		if (dot_CP_AB > 0) // In the the same direction
-		{
-			rayInfo.isIntersected = false;
-			return rayInfo;
-		}
-		// In the opposite directions
-		rayInfo.isIntersected = true;
-		return rayInfo;
+		rayInfoFullSphere.isIntersected = true;
+		return rayInfoFullSphere;
 	}
-	else if (sphereCentre == sphereCentrePosB)
-	{
-
-		if (dot_CP_AB > 0)
-		{
-			rayInfo.isIntersected = true;
-			return rayInfo;
-		}
-
-		rayInfo.isIntersected = false;
-		return rayInfo;
-	}
+	rayInfoFullSphere.isIntersected = false;
+	return rayInfoFullSphere;
 }
 
 RayIntersectionInfo GEOMETRY::Capsule::checkCylinder(const Ray& ray) const
@@ -180,24 +176,28 @@ RayIntersectionInfo GEOMETRY::Capsule::checkCylinder(const Ray& ray) const
 	Vec3 ab = sphereCentrePosB - sphereCentrePosA;
 	Vec3 as = ray.start - sphereCentrePosA;
 
+	//Vec3 ap = rayInfo.intersectionPoint - capCentrePosA;
 	Vec3 ap = as + rayInfo.t * ray.dir;
 
-	Vec3 bs = ray.start - sphereCentrePosB;
-
-	float dot_ab_ab = VMath::dot(ab, ab);
 	float dot_ap_ab = VMath::dot(ap, ab);
-
 	float dot_as_ab = VMath::dot(as, ab);
 	float dot_v_ab = VMath::dot(ray.dir, ab);
 
-	float dot_bs_ab = VMath::dot(bs, ab);
+
+	Vec3 bs = ray.start - sphereCentrePosB;
+	Vec3 ba = sphereCentrePosA - sphereCentrePosB;
+
+	float dot_ab_ab = VMath::dot(ab, ab);
+	float dot_bs_ba = VMath::dot(bs, ba);
+	float dot_v_ba = VMath::dot(ray.dir, ba);
+
 
 	if (dot_ap_ab < 0.0f) {
 		// we are outside of cap centre A's plane (on the left side)
 		if (VMath::dot(ray.dir, ab) > 0.0f) {
 			// need to check for ray coming at endcap A. I wrote out this eqn on paper
 			float t = -dot_as_ab / dot_v_ab;
-			return checkEndCap(ray, t);
+			return checkEndCap(ray, t, sphereCentrePosA);
 		}
 		else {
 			// ray going wrong way
@@ -210,9 +210,10 @@ RayIntersectionInfo GEOMETRY::Capsule::checkCylinder(const Ray& ray) const
 		// We are outside of cap centre B's plane (on the right side)
 		// If statement means the point is further than the length of the cylinder from endcap A
 		if (VMath::dot(ray.dir, ab) < 0.0f) {
+			std::cout << "B Cap\n";
 			// ray is coming for endcap B
-			float t = -dot_bs_ab / dot_v_ab;
-			return checkEndCap(ray, t);
+			float t = -dot_bs_ba / dot_v_ba;
+			return checkEndCap(ray, t, sphereCentrePosB);
 		}
 		else {
 			// ray going wrong way
@@ -261,15 +262,13 @@ RayIntersectionInfo GEOMETRY::Capsule::checkInfiniteCylinder(const Ray& ray) con
 	return rayInfo;
 }
 
-RayIntersectionInfo GEOMETRY::Capsule::checkEndCap(const Ray& ray, float t) const
+RayIntersectionInfo GEOMETRY::Capsule::checkEndCap(const Ray& ray, float t, Vec3 endCap) const
 {
 	RayIntersectionInfo rayInfo;
-	Vec3 ab = sphereCentrePosB - sphereCentrePosA;
-	Vec3 as = ray.start - sphereCentrePosA;
 
 	Vec3 q = ray.currentPosition(t);
 
-	float magnitude = VMath::mag(q - sphereCentrePosA);
+	float magnitude = VMath::mag(q - endCap);
 
 	if (magnitude <= r) {
 		rayInfo.isIntersected = true;

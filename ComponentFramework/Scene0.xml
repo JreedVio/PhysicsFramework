@@ -8,18 +8,20 @@
 	  </Mesh>
 	  
 	  <Mesh name="MarioMesh" filename="meshes/Mario.obj">
-		  <Shape name="marioCapsuleShape">
-			  <Capsule radius = "1.0" topSphereCentreX="0.0" topSphereCentreY="1.0" topSphereCentreZ="0.0"
-					   bottomSphereCentreX ="0.0" bottomSphereCentreY="-1.0" bottomSphereCentreZ="0.0"
-				/>"
+		  <Shape name="CapsuleShape">
+			  <Capsule radius = "0.5" topSphereCentreX="0.0" topSphereCentreY="0.9" topSphereCentreZ="0.0"
+					   bottomSphereCentreX ="0.0" bottomSphereCentreY="-0.9" bottomSphereCentreZ="0.0"
+				/>
 		  </Shape>
 	  </Mesh>
 
 	  <Mesh name="PlaneMesh" filename="meshes/Plane.obj">
 		  <Shape name="CheckerboardPlaneShape">
 			  <!--TODO-->
-			  <Rectangle 
-				/>
+        <Box centreX="0.0" centreY="0.0" centreZ="-0.11"
+				   halfExtentX="5.0" halfExtentY="5.0" halfExtentZ="0.1"
+					angleDeg ="0.0" axisX ="1.0" axisY="0.0" axisZ="0.0"
+				   />
 		  </Shape>
 	  </Mesh>
 	  
@@ -30,6 +32,14 @@
 				/>
 		  </Shape>
 	  </Mesh>
+
+    <Mesh name="MarioMimeMesh" filename="meshes/Mario.obj">
+      <Shape name="MarioCylinderShape">
+        <Cylinder radius="0.5" topCapCentreX="0.0" topCapCentreY="1.3" topCapCentreZ="0.0" 
+					  bottomCapCentreX ="0.0" bottomCapCentreY="-1.3" bottomCapCentreZ="0.0"
+				/>
+      </Shape>
+    </Mesh>
 
 
 	  <Mesh name="CubeMesh" filename="meshes/Cube.obj">
@@ -46,6 +56,9 @@
 	  <Material name="BlackCheckerMaterial" filename="textures/blackCheckerPiece.png"/>
 	  <Material name="WhiteCheckerMaterial" filename="textures/whiteCheckerPiece.png"/>
 	  <Material name="MarioMaterial" filename="textures/mario_main.png"/>
+	  <Material name="MarioMimeMaterial" filename="textures/mario_mime.png"/>
+	  <Material name="RedCubeMaterial" filename="textures/red_cube.png"/>
+	  <Material name="BlackCubeMaterial" filename="textures/black_cube.png"/>
 
 	  <Shader name="Shader" vertFilename="shaders/textureVert.glsl" fragFilename="shaders/textureFrag.glsl"/>
 	  
@@ -59,7 +72,7 @@
 				   accelx="0.0" accely="0.0" accelz="0.0"
 				   angularVelx="0.0" angularVely="0.0" angularVelz="0.0"/>
 		<Mesh name="PlaneMesh"/>
-		  <Shape name="CubeShape"/>
+		  <Shape name="CheckerboardPlaneShape"/>
 		  <Shader name ="Shader"/>
 		<Material name ="BoardMaterial"/>			  
 	  </Actor>
@@ -94,23 +107,8 @@
 		  <Material name ="BlackCheckerMaterial"/>
 	  </Actor>
 
-	  <Actor actorname="ActorDefaultChecker" parent="none">
-		  <Transform posx="-8.0" posy="0.0" posz="-4.0"
-					 angleDeg="90.0" axisx="1.0" axisy="0.0" axisz="0.0"
-					 scalex="0.1" scaley="0.1" scalez="0.1"/>
-		  <Physics mass ="1.0"
-				   rotIe11 ="1.0" rotIe12 ="1.0" rotIe13 ="1.0"
-				   velx="0.0" vely="0.0" velz="0.0"
-				   accelx="0.0" accely="0.0" accelz="0.0"
-				   angularVelx="0.0" angularVely="0.0" angularVelz="0.0"/>
-		  <Mesh name="CheckerMesh"/>
-		  <Shape name="CheckerCylinderShape"/>
-		  <Shader name ="Shader"/>
-		  <Material name ="RedCheckerMaterial"/>
-	  </Actor>
-
 	  <Actor actorname="ActorTinyChecker" parent="none">
-		  <Transform posx="-3.0" posy="0.0" posz="-16"
+		  <Transform posx="-10.0" posy="0.0" posz="-16"
 					 angleDeg="0.0" axisx="1.0" axisy="0.0" axisz="0.0"
 					 scalex="0.05" scaley="0.05" scalez="0.05"/>
 		  <Physics mass ="1.0"
@@ -125,7 +123,7 @@
 	  </Actor>
 
 	  <Actor actorname="ActorSkull" parent="none">
-		  <Transform posx="5.0" posy="0.0" posz="-16.0"
+		  <Transform posx="0.0" posy="-3.0" posz="-16.0"
 					 angleDeg="0.0" axisx="1.0" axisy="0.0" axisz="0.0"
 					 scalex="1" scaley="1" scalez="1"/>
 		  <Physics mass ="1.0"
@@ -140,22 +138,7 @@
 	  </Actor>
 
 	  <Actor actorname="ActorCube" parent="none">
-		  <Transform posx="0.0" posy="0.0" posz="-16.0"
-					 angleDeg="0.0" axisx="1.0" axisy="0.0" axisz="0.0"
-					 scalex="1.0" scaley="1.0" scalez="1.0"/>
-		  <Physics mass ="1.0"
-				   rotIe11 ="1.0" rotIe12 ="1.0" rotIe13 ="1.0"
-				   velx="0.0" vely="0.0" velz="0.0"
-				   accelx="0.0" accely="0.0" accelz="0.0"
-				   angularVelx="0.0" angularVely="0.0" angularVelz="0.0"/>
-		  <Mesh name="CubeMesh"/>
-		  <Shape name="CubeShape"/>
-		  <Shader name ="Shader"/>
-		  <Material name ="RedCheckerMaterial"/>
-	  </Actor>
-
-	  <Actor actorname="ActorCube2" parent="none">
-		  <Transform posx="3.0" posy="2.0" posz="-16.0"
+		  <Transform posx="0.0" posy="3.0" posz="-16.0"
 					 angleDeg="45.0" axisx="1.0" axisy="0.0" axisz="0.0"
 					 scalex="1.0" scaley="1.0" scalez="1.0"/>
 		  <Physics mass ="1.0"
@@ -166,10 +149,26 @@
 		  <Mesh name="CubeMesh"/>
 		  <Shape name="CubeShape"/>
 		  <Shader name ="Shader"/>
-		  <Material name ="MarioMaterial"/>
+		  <Material name ="BlackCubeMaterial"/>
 	  </Actor>
 
-	  <Actor actorname="ActorMario" parent="none">
+    <Actor actorname="ActorMarioMime" parent="none">
+      <Transform posx="4.0" posy="1.0" posz="-15.0"
+					 angleDeg="180.0" axisx="0.0" axisy="1.0" axisz="0.0"
+					 scalex="1.5" scaley="1.5" scalez="1.5"/>
+      <Physics mass ="1.0"
+				   rotIe11 ="1.0" rotIe12 ="1.0" rotIe13 ="1.0"
+				   velx="0.0" vely="0.0" velz="0.0"
+				   accelx="0.0" accely="0.0" accelz="0.0"
+				   angularVelx="0.0" angularVely="0.0" angularVelz="0.0"/>
+      <Mesh name="MarioMimeMesh"/>
+      <Shape name="MarioCylinderShape"/>
+      <Shader name ="Shader"/>
+      <Material name ="MarioMimeMaterial"/>
+    </Actor>
+
+
+    <Actor actorname="ActorMario" parent="none">
 		  <Transform posx="-4.0" posy="1.0" posz="-15.0"
 					 angleDeg="180.0" axisx="0.0" axisy="1.0" axisz="0.0"
 					 scalex="1.5" scaley="1.5" scalez="1.5"/>
@@ -179,11 +178,11 @@
 				   accelx="0.0" accely="0.0" accelz="0.0"
 				   angularVelx="0.0" angularVely="0.0" angularVelz="0.0"/>
 		  <Mesh name="MarioMesh"/>
-		  <Shape name="marioCapsuleShape"/>
+		  <Shape name="CapsuleShape"/>
 		  <Shader name ="Shader"/>
 		  <Material name ="MarioMaterial"/>
 	  </Actor>
-	  
+
 	  <Camera cameraname="Camera1" parent="none">
 		  <Transform posx="0.0" posy="0.0" posz="0.0" 
 					 angleDeg="0.0" axisx="1.0" axisy="0.0" axisz="0.0"

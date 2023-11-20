@@ -30,7 +30,7 @@ public:
 
 		float duration = (end - start) * 0.001f;
 
-		std::cout << "Duration: " << duration << "ms" << std::endl;
+		//std::cout << "Duration: " << duration << "ms" << std::endl;
 	}
 
 

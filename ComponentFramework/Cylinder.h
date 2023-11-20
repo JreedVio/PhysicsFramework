@@ -23,7 +23,7 @@ namespace GEOMETRY {
 		void generateVerticesAndNormals() override;
 		RayIntersectionInfo rayIntersectionInfo(const Ray& ray) const override;
 		RayIntersectionInfo checkInfiniteCylinder(const Ray& ray) const;
-		RayIntersectionInfo checkEndCap(const Ray& ray, float t) const;
+		RayIntersectionInfo checkEndCap(const Ray& ray, float t, Vec3 endCap) const;
 	};
 }
 #endif

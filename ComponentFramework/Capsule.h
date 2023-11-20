@@ -25,11 +25,11 @@ namespace GEOMETRY {
 		void generateVerticesAndNormals() override;
 		RayIntersectionInfo rayIntersectionInfo(const Ray& ray) const override;
 		RayIntersectionInfo checkEndSphere(MATH::Vec3 sphereCentre, const Ray& ray)	const;
-		RayIntersectionInfo checkHalfSphere(const RayIntersectionInfo&
-			rayInfoFullSphere, const MATH::Vec3& sphereCentre) const;
+		RayIntersectionInfo checkHalfSphere(RayIntersectionInfo&
+			rayInfoFullSphere, const MATH::Vec3& sphereCentre, const MATH::Vec3& oppositeSphereCentre) const;
 		RayIntersectionInfo checkCylinder(const Ray& ray) const;
 		RayIntersectionInfo checkInfiniteCylinder(const Ray& ray) const;
-		RayIntersectionInfo checkEndCap(const Ray& ray, float t) const;
+		RayIntersectionInfo checkEndCap(const Ray& ray, float t, Vec3 endCap) const;
 
 
 

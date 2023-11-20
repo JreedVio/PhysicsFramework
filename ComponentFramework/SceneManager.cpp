@@ -5,6 +5,7 @@
 #include "Scene0.h"
 #include "Scene1.h"
 #include "Scene2.h"
+#include <thread>
 
 #include "imgui.h"
 #include "imgui_impl_sdl.h"
@@ -15,7 +16,7 @@
 
 SceneManager::SceneManager(): 
 	currentScene(nullptr), window(nullptr), timer(nullptr),
-	fps(60), isRunning(false), fullScreen(false), show_demo_window(true),
+	fps(200), isRunning(false), fullScreen(false), show_demo_window(true),
 	show_another_window(true), clear_color(ImVec4(0.45f, 0.55f, 0.60f, 1.00f)) {
 	Debug::Info("Starting the SceneManager", __FILE__, __LINE__);
 }
@@ -81,8 +82,6 @@ void SceneManager::Run() {
 		ImGui_ImplOpenGL3_NewFrame();
 		ImGui_ImplSDL2_NewFrame();
 		ImGui::NewFrame();
-		if (show_demo_window)
-			ImGui::ShowDemoWindow(&show_demo_window);
 
 		// 2. Show a simple window that we create ourselves. We use a Begin/End pair to create a named window.
 		if (show_another_window)
@@ -103,6 +102,8 @@ void SceneManager::Run() {
 		timer->UpdateFrameTicks();
 		currentScene->Update(timer->GetDeltaTime());
 		currentScene->Render(clear_color);
+
+		//std::thread th1
 
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

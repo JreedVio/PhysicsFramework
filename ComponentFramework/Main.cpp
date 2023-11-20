@@ -54,12 +54,9 @@ int main(int argc, char* args[]) {
 
 	Debug::DebugInit("GameEngineLog.txt");
 
-	PrintDog();
-	PrintLine();
 	PrintCat();
-	PrintLine();
-	PrintParrot();
-
+	printf("\n");
+	PrintDog();
 	
 	// Let's fix up this raw pointer:
 	// SceneManager* gsm = new SceneManager();
@@ -69,7 +66,7 @@ int main(int argc, char* args[]) {
 		// This is the cool way to do it with one allocation
 		// The only unique pointer we'll have in the whole engine. We'll use shared for the rest
 		std::unique_ptr<SceneManager> game = std::make_unique<SceneManager>();
-		if (game->Initialize("Game Engine", 1280, 720) == true) {
+		if (game->Initialize("Game Engine", 1920, 1080) == true) {
 			game->Run();
 		}
 	}
